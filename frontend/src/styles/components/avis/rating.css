@@ -1,0 +1,15 @@
+.rating {
+    font-size: 1.8rem;
+  }
+  
+  .rating span {
+    color: grey;
+    cursor: pointer;
+  }
+  
+  .rating span.filled {
+    color: #ffffff;
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+  }
+  

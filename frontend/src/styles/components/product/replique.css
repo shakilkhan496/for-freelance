@@ -1,0 +1,129 @@
+
+
+@media screen and (min-width: 600px){
+    .content-replique{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        width: 100%;
+    }
+    
+    .replique{
+        margin: 0 10%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100%;
+    }
+    
+    .d1-replique{
+        grid-area: 1 / 1 / 3 / 2;
+        height: 400px;
+        margin: 0 10%;
+        margin-bottom: 20%;
+    }
+    
+    .d2-replique{
+        grid-area: 1 / 2 / 2 / 3;
+        height: 200px;
+        margin: 0 10%;
+    }
+    
+    .d3-replique{
+        grid-area: 2 / 2 / 4 / 3;
+        height: 400px;
+        margin: 0 10%;
+    }
+    
+    .d4-replique{
+        grid-area: 3 / 1 / 4 / 2;
+        height: 200px;
+        margin: 0 10%;
+        margin-top: -10%;
+    }
+}
+@media screen and (max-width: 600px){
+    .content-replique{
+        margin-top: 50px;
+    }
+    
+    .replique{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        margin: 0 10%;
+        gap: 3%;
+        margin-bottom: 20%;
+    }
+    
+    .d1-replique{
+        grid-area: 1 / 1 / 3 / 2;
+        height: 350px;
+    }
+    
+    .d2-replique{
+        grid-area: 3 / 1 / 4 / 2;
+        height: 150px;
+    }
+    
+    .d3-replique{
+        grid-area: 4 / 1 / 6 / 2;
+        height: 350px;
+    }
+    
+    .d4-replique{
+        grid-area: 6 / 1 / 7 / 2;
+        height: 150px;
+    }
+}
+
+
+.tilty-replique {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
+    background-color: var(--gris-bg);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    border: 1px solid var(--border);
+}
+
+.inner-replique {
+    transform: translateZ(60px);
+    transition: 0.2s;
+}
+
+.text-replique{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.text-replique img{
+    width: 100%;
+}
+
+.d1-replique a{
+    color: var(--blanc);
+}
+.d2-replique a{
+    text-decoration: none;
+    color: inherit;
+}
+.d3-replique a{
+    text-decoration: none;
+    color: inherit;
+}
+.d4-replique a{
+    text-decoration: none;
+    color: inherit;
+}

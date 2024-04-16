@@ -1,0 +1,59 @@
+.compte{
+    height: 100vh;
+    display: flex;
+}
+
+.compte .content-link{
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.compte .content-page{
+    grid-area: 1 / 2 / 2 / 6;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.compte ul{
+    margin-left: -50px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+.compte li{
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+    list-style-type: none;
+    border-radius: 10px;
+}
+
+.compte li:hover{
+    text-shadow: rgb(184, 226, 250) 1px 0 10px;
+}
+
+.compte .li-img{
+    margin-left: 35px;
+    cursor: default;
+}
+
+.compte .logo-compte:hover{
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+}
+
+.compte .active-btn{
+    background-color: var(--gris-bg);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+    border: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+.compte .btn{
+    border: 1px solid var(--border);
+}

@@ -1,0 +1,165 @@
+.Home{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    top: 0;
+    z-index: 1;
+    background: transparent;
+    position: sticky;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparitionHeader 0.4s 0.1s ease-out forwards;
+}
+
+@keyframes apparitionHeader{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.new1, .new2, .new3, .new4{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.new1 h1, .new2 h1, .new3 h1, .new4 h1{
+    cursor: pointer;
+}
+
+.new1 h1:hover, .new2 h1:hover, .new3 h1:hover{
+    text-shadow: rgb(184, 226, 250) 1px 0 10px;
+}
+
+.Home h1 a:link,
+.Home h1 a:visited{
+    color: var(--blanc);
+  text-decoration: none;
+}
+
+.Home h1 a:active{
+    color: var(--gris-bg);
+}
+
+
+.changed{
+    animation: case 0.3s linear alternate;
+    margin-bottom: 20px;
+}
+
+.default{
+    margin-bottom: 20px;
+}
+
+@keyframes case{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(0, 10px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+
+
+
+.new1 span{
+    border-radius: 30px;
+    margin-top: -10px;
+    height: 2px;
+    width: 0px;
+    background: var(--blanc);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: apparitionNew1Span 0.8s 0.2s ease-out forwards;
+}
+
+@keyframes apparitionNew1Span{
+    100%{
+        width: 170px;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.new2 span{
+    border-radius: 30px;
+    margin-top: -10px;
+    height: 2px;
+    width: 0px;
+    background: var(--blanc);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: apparitionNew2Span 0.8s 0.4s ease-out forwards;
+}
+
+@keyframes apparitionNew2Span{
+    100%{
+        width: 100px;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.new3 span{
+    border-radius: 30px;
+    margin-top: -10px;
+    height: 2px;
+    width: 0px;
+    background: var(--blanc);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: apparitionNew3Span 0.8s 0.4s ease-out forwards;
+}
+
+@keyframes apparitionNew3Span{
+    100%{
+        width: 140px;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.new4 span{
+    border-radius: 30px;
+    margin-top: -10px;
+    height: 2px;
+    width: 0px;
+    background: var(--blanc);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: apparitionNew4Span 0.8s 0.4s ease-out forwards;
+}
+
+@keyframes apparitionNew4Span{
+    100%{
+        width: 150px;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.new1 h1, .new2 h1, .new3 h1, .new4 h1{
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparitionNewH1 0.8s 0.2s ease-out forwards;
+}
+
+@keyframes apparitionNewH1{
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.footer{
+    margin-top: auto;
+}
+

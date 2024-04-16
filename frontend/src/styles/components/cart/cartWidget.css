@@ -1,0 +1,32 @@
+
+.content-cart{
+    display: flex;
+    align-items: center;
+}
+
+.content-produit-cart{
+    margin: 0px 10px;
+}
+
+.title-cart{
+    margin-bottom: 3px;
+}
+
+.description-cart{
+    margin-top: -8px;
+    margin-bottom: -20px;
+}
+
+.content-price-cart{
+    display: flex;
+    align-items: center;
+    margin: -10px 0px;
+}
+
+.content-btn-supr-cart{
+    margin-top: -17px;
+}
+
+.img-cart{
+    height: 25px;
+}

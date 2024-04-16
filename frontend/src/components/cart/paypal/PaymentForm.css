@@ -1,0 +1,287 @@
+
+
+@media screen and (min-width: 700px){
+}
+
+@media screen and (max-width: 700px){
+}
+
+
+.pay-paypal{
+  width: 100%;
+  height: 100vh;
+}
+
+.container-paypal{
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-input-paypal-card-number{
+  overflow: hidden;
+}
+
+.input-paypal{
+  padding: 12px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  margin: 8px 2px;
+  resize: vertical;
+  height: 40px;
+  font-size: 14px;
+  color: #fff;
+  font-family: helvetica, tahoma, calibri, sans-serif;
+  background-color: none;
+}
+
+iframe{
+  filter: drop-shadow(0 0 0.3rem rgb(255, 255, 255));
+  color: #fff;
+  color-scheme: light;
+}
+
+.field-description{
+  color: #fff;
+  background: red;
+}
+
+
+.input-paypal:hover{
+}
+
+.input-paypal-name-on-card{
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  margin: 8px 2px;
+  resize: vertical;
+  height: 40px;
+  font-size: 14px;
+  color: #fff;
+  font-family: helvetica, tahoma, calibri, sans-serif;
+  background-color: transparent;
+  filter: drop-shadow(0 0 0.3rem rgb(255, 255, 255));
+}
+
+.input-paypal-name-on-card:focus{
+  
+  outline:  none;
+}
+
+.number{
+  background: none;
+}
+
+.btn-paypal{
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  margin: 8px 0;
+  background-color: var(--gris-bg);
+  box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+  filter: drop-shadow(0 0 0.75rem var(--shadow));
+  border: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+.btn-paypal:hover{
+  background-color: #222;
+}
+
+.btn-paypal:active{
+  transform: scale(0.95);
+}
+
+.line-paypal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line-paypal-1{
+  height: 0px;
+  width: 35%;
+  border: 1px solid #fff;
+}
+
+.line-paypal-2{
+  display: flex;
+  margin: 0px 25px;
+  width: 25px;
+  justify-content: center;
+}
+
+.line-paypal-3{
+  height: 0px;
+  width: 35%;
+  border: 1px solid #fff;
+}
+
+.container-checkbox-paypal {
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 20px;
+  --checkbox-height: 25px;
+}
+
+.container-checkbox-paypal p{
+  margin: 0px 0px 0px 15px;
+}
+
+@-moz-keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: calc(var(--checkbox-height) / 2);
+  }
+}
+
+@-webkit-keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: calc(var(--checkbox-height) / 2);
+  }
+}
+
+@keyframes dothabottomcheck {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: calc(var(--checkbox-height) / 2);
+  }
+}
+
+@keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: calc(var(--checkbox-height) * 1.2);
+  }
+}
+
+@-webkit-keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: calc(var(--checkbox-height) * 1.2);
+  }
+}
+
+@-moz-keyframes dothatopcheck {
+  0% {
+    height: 0;
+  }
+  50% {
+    height: 0;
+  }
+  100% {
+    height: calc(var(--checkbox-height) * 1.2);
+  }
+}
+
+.container-checkbox-paypal input[type=checkbox] {
+  display: none;
+}
+
+.container-checkbox-paypal .check-box {
+  height: var(--checkbox-height);
+  width: var(--checkbox-height);
+  background-color: transparent;
+  border: calc(var(--checkbox-height) * .1) solid #fff;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: border-color ease 0.2s;
+  -o-transition: border-color ease 0.2s;
+  -webkit-transition: border-color ease 0.2s;
+  transition: border-color ease 0.2s;
+  cursor: pointer;
+}
+.container-checkbox-paypal .check-box::before,
+.container-checkbox-paypal .check-box::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  height: 0;
+  width: calc(var(--checkbox-height) * .2);
+  background-color: #777777;
+  display: inline-block;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-radius: 5px;
+  content: " ";
+  -webkit-transition: opacity ease 0.5;
+  -moz-transition: opacity ease 0.5;
+  transition: opacity ease 0.5;
+}
+.container-checkbox-paypal .check-box::before {
+  top: calc(var(--checkbox-height) * .72);
+  left: calc(var(--checkbox-height) * .41);
+  box-shadow: 0 0 0 calc(var(--checkbox-height) * .05) var(--bg);
+  
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+.container-checkbox-paypal .check-box::after {
+  top: calc(var(--checkbox-height) * .37);
+  left: calc(var(--checkbox-height) * .05);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.container-checkbox-paypal input[type=checkbox]:checked + .check-box,
+.container-checkbox-paypal .check-box.checked {
+  border-color: #727272;
+  
+}
+.container-checkbox-paypal input[type=checkbox]:checked + .check-box::after,
+.container-checkbox-paypal .check-box.checked::after {
+  height: calc(var(--checkbox-height) / 2);
+  -moz-animation: dothabottomcheck 0.2s ease 0s forwards;
+  -o-animation: dothabottomcheck 0.2s ease 0s forwards;
+  -webkit-animation: dothabottomcheck 0.2s ease 0s forwards;
+  animation: dothabottomcheck 0.2s ease 0s forwards;
+}
+.container-checkbox-paypal input[type=checkbox]:checked + .check-box::before,
+.container-checkbox-paypal .check-box.checked::before {
+  height: calc(var(--checkbox-height) * 1.2);
+  -moz-animation: dothatopcheck 0.4s ease 0s forwards;
+  -o-animation: dothatopcheck 0.4s ease 0s forwards;
+  -webkit-animation: dothatopcheck 0.4s ease 0s forwards;
+  animation: dothatopcheck 0.4s ease 0s forwards;
+}
+
+.container-checkbox-paypal input[type=checkbox]:checked{
+  
+  
+}

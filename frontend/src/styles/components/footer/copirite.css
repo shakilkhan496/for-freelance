@@ -1,0 +1,8 @@
+.copirite footer{
+    display: flex;
+    justify-content: center;
+}
+
+.version{
+    margin-left: 10px;
+}

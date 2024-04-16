@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@300;500;700&display=swap");
+
+:root {
+  --gris-bg: rgba(255, 255, 255, 0.25);
+  --bg: #242424;
+  --blanc: #fff;
+  --border: rgba(255, 255, 255, 0.18);
+  --shadow: rgba(184, 226, 250, 0.652);
+  --transparent: #ffffff00;
+  font-family: Helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--blanc);
+  background-color: var(--bg);
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+a {
+  text-decoration: none;
+}

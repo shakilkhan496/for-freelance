@@ -1,0 +1,113 @@
+
+.adresse-profil{
+    margin: 100px 50px 0px 50px;
+}
+
+
+.container-adresse-adresse{
+    margin-top: 100px;
+}
+
+.container-codepostal-ville{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.input_from_adresseSave{
+    color: #fff;
+    margin-top: 35px;
+    width: 50%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 20px;
+    font-size: large;
+    border: 1px solid var(--border);
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.input_from_addAdresse{
+    color: #fff;
+    margin-top: 35px;
+    width: 50%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 20px;
+    font-size: large;
+    border: 1px solid var(--border);
+    background-color: transparent;
+    transition: 0.2s;
+}
+
+.input_from_adresseSave:hover{
+    background-color: var(--gris-bg);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+    border: 1px solid rgba(255, 255, 255, 0.329);
+}
+.input_from_addAdresse:hover{
+    background-color: var(--gris-bg);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+    border: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+.checkbox-facadresse{
+    margin-top: 40px;
+}
+
+
+
+.form_input_adresse{
+    position: relative;
+    margin: 35px 0;
+    overflow-x: clip;
+    gap: 5%;
+    width: 100%;
+}
+
+.input_adresse{
+    width: 100%;
+    background-color: transparent;
+    color: #eee;
+    transition: 0.15s all ease;
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+
+.input_adresse:focus{
+    outline: none;
+}
+
+.input_adresse:focus{
+    border-color: #eee;
+}
+
+.input_adresse::placeholder{
+    color: transparent;
+}
+
+.label_adresse{
+    position: absolute;
+    top: 5px;
+    left: -8px;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #acacac;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+
+.input_adresse:focus + .label_adresse,
+.input_adresse:not(:placeholder-shown) +
+.label_adresse{
+    transform: translate(5px, -22px);
+    background-color: transparent;
+    font-size: 14px;
+    color: #acacac;
+}

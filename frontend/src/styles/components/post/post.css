@@ -1,0 +1,16 @@
+.post{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.link-post{
+    margin: 20px;
+}
+
+.replique-post{
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}

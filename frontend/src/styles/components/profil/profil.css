@@ -1,0 +1,169 @@
+
+.profil{
+    margin: 100px 50px 0px 50px;
+}
+
+.container-profil{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-profil{
+    width: 47.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pp-profil{
+    display: flex;
+}
+
+.pp-profil button{
+    border-radius: 50px;
+    background: #7e7e7e;
+    border-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+}
+
+.img-pp{
+    margin-left: 10px;
+    border-radius: 500px;
+    height: 75px;
+    width: 75px;
+}
+
+.pp-edit{
+    height: 24px;
+}
+
+.container-pp-input-profil{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pseudo-url-profil{
+    width: 100%;
+    overflow: hidden;
+}
+
+.container-compte-point{
+    width: 47.5%;
+}
+
+.input_from_9{
+    margin-top: 35px;
+    width: 100%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 20px;
+    font-size: large;
+    border: 1px solid var(--border);
+    background-color: transparent;
+    transition: 0.2s;
+}
+  
+.input_from_9:hover{
+    background-color: var(--gris-bg);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+    border: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+.link_from_profil{
+    color: #fff;
+    margin-top: 35px;
+    width: 50%;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 20px;
+    font-size: large;
+    border: 1px solid var(--border);
+    background-color: transparent;
+    transition: 0.2s;
+}
+  
+.link_from_profil:hover{
+    background-color: var(--gris-bg);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+    border: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+.form_11{
+    overflow: hidden;
+}
+
+.form_12{
+    overflow: hidden;
+}
+
+.form_14{
+    overflow: hidden;
+}
+
+.form_15{
+    overflow: hidden;
+}
+
+.container-modifMdp-save{
+    display: flex;
+    gap: 5%;
+}
+
+.form_input_profil{
+    position: relative;
+    margin: 35px 0;
+    overflow-x: clip;
+    gap: 5%;
+}
+
+.input_profil{
+    width: 100%;
+    background-color: transparent;
+    color: #eee;
+    transition: 0.15s all ease;
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+
+.input_profil:focus{
+    outline: none;
+}
+
+.input_profil:focus{
+    border-color: #eee;
+}
+
+.input_profil::placeholder{
+    color: transparent;
+}
+
+.label_profil{
+    position: absolute;
+    top: 5px;
+    left: -8px;
+    font-size: 18px;
+    padding: 0 10px;
+    color: #acacac;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+
+.input_profil:focus + .label_profil,
+.input_profil:not(:placeholder-shown) +
+.label_profil{
+    transform: translate(5px, -22px);
+    background-color: transparent;
+    font-size: 14px;
+    color: #acacac;
+}

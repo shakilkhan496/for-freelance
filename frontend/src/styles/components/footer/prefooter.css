@@ -1,0 +1,113 @@
+
+@media screen and (min-width: 1300px){
+
+    .prefooter{
+        height: 150px;
+        margin-top: 50px;
+        margin-bottom: -150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid #fff;
+    }
+    
+    .content-prefooter{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .logo-texte-prefooter img{
+        height: 45px;
+    }
+}
+
+@media screen and (max-width: 1300px){
+
+    .prefooter{
+        height: 150px;
+        margin-bottom: -150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid #fff;
+    }
+    
+    .content-prefooter{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .logo-texte-prefooter img{
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .prefooter{
+        height: 300px;
+        margin-bottom: -150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid #fff;
+    }
+    
+    .content-prefooter{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .logo-texte-prefooter img{
+        height: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 365px){
+    .prefooter{
+        height: 500px;
+        margin-bottom: -150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 1px solid #fff;
+    }
+    
+    .content-prefooter{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-texte-prefooter img{
+        height: 25px;
+    }
+}
+
+.logo-texte-prefooter{
+    margin-top: 20px;
+}
+
+.logo-texte-prefooter a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.1s;
+}
+
+.logo-texte-prefooter a:hover{
+    transform: scale(0.95);
+}
+
+.logo-texte-prefooter h3{
+    margin-top: 7.5px;
+    font-family: 'Stick No Bills', Helvetica;
+    color: #fff;
+}
+
+.logo-texte-prefooter p{
+    margin-top: -20px;
+    color: #fff;
+}

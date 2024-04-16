@@ -1,0 +1,26 @@
+.livraison-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.livraison-itemtable,
+caption,
+th,
+td {
+    background-color: var(--gris-bg);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.486);
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+.livraison-itemcaption,
+th,
+td {
+  padding: 8px;
+}
+
+.livraison-prix::after{
+    content: " €";
+}

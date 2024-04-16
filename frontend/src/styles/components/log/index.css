@@ -1,0 +1,50 @@
+.ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 10px;
+}
+
+#register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 20px;
+    width: 200px;
+    transition: all .2s ease-in-out;
+}
+
+#register:hover{
+    transform: scale(0.95);
+}
+
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 20px;
+    width: 200px;
+    transition: all .2s ease-in-out;
+}
+
+#login:hover{
+    transform: scale(0.95);
+}
+
+.connection-form .active-btn{
+    background-color: var(--gris-bg);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+    border: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+.connection-form .btn{
+    border: 1px solid var(--border);
+}

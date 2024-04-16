@@ -1,0 +1,258 @@
+
+/* basic stylings ------------------------------------------ */
+
+.signup    {
+  display: flex;
+  margin-top: 75px;
+  justify-content: center;
+}
+
+
+/* form starting stylings ------------------------------- */
+
+
+.signup input         {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.signup input:focus     { outline:none; }
+
+
+/* LABEL ======================================= */
+
+
+.signup label          {
+  color: #999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+
+/* active state */
+
+
+.signup input:focus ~ label, .signup input:valid ~ label    {
+  top:-20px;
+  font-size:14px;
+  color:#999;
+}
+
+
+/* BOTTOM BARS ================================= */
+
+
+.bar  { position:relative; display:block; width:300px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#ffffff; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+
+/* active state */
+
+
+.signup input:focus ~ .bar:before, .signup input:focus ~ .bar:after {
+  width:50%;
+}
+
+
+/* HIGHLIGHTER ================================== */
+
+
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+
+/* active state */
+
+
+.signup input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/*input front-end*/
+
+.group{
+    position:relative; 
+    margin-bottom:45px;
+    overflow-x: clip;
+}
+
+.group p{
+    color: #999;
+}
+
+.input_mail{
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    width: 300px;
+}
+
+.input_password{
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+    width: 300px;
+}
+
+.input_submit{
+  border: 1px solid var(--border);
+  background-color: transparent;
+  cursor: pointer;
+  height: 30px;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.2s;
+}
+
+.input_submit:hover{
+  background-color: var(--gris-bg);
+  box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+  filter: drop-shadow(0 0 0.75rem var(--shadow));
+  border: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+.input_checkbox{
+  cursor: pointer;
+  margin-left: -135px;
+}
+
+.condition_utilisation{
+  margin-top: -25px;
+  margin-left: 30px;
+}
+
+.label-input-terms{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+}
+
+
+.bars {
+  margin: 8px 0;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 6px;
+  border-radius: 3px;
+  background: #dfe1f0;
+}
+
+.bars div {
+  height: 6px;
+  border-radius: 3px;
+  transition: 0.4s;
+  width: 0%;
+}
+
+.bars.faible div {
+  background: #e24c71;
+  width: 33.33%;
+}
+
+.bars.moyen div {
+  background: #f39845;
+  width: 66.66%;
+}
+
+.bars.forte div {
+  background: #57c558;
+  width: 100%;
+}
+
+.strength {
+  text-align: left;
+  height: 30px;
+  text-transform: capitalize;
+  color: #868b94;
+}
+
+.toggle-password{
+  position: absolute;
+  top: 9px;
+  left: 260px;
+}
+
+.img-eye-mdp{
+  height: 25px;
+}
+
+.input_submit-signup{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background-color: transparent;
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.2s;
+}
+
+.input_submit-signup:hover{
+  transform: scale(0.95);
+  background-color: var(--gris-bg);
+  box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+  filter: drop-shadow(0 0 0.75rem var(--shadow));
+  border: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+.group-condi{
+  width: 300px;
+}
+
+.group-condi-input{
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.group-condi-span{
+  margin-left: 45px;
+  color: var(--border);
+}
+
+.group-condi-span-link{
+  color: var(--border);
+  text-decoration: underline;
+}

@@ -1,0 +1,7 @@
+.Footer{
+    background-color: var(--gris-bg);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    border: 1px solid var(--border);
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}

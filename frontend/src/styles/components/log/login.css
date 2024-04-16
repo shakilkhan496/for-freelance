@@ -1,0 +1,153 @@
+
+/* basic stylings ------------------------------------------ */
+
+.login    { 
+  display: flex;
+  margin-top: 75px;
+  justify-content: center;
+}
+
+
+/* form starting stylings ------------------------------- */
+
+
+.login input         {
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  display:block;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+.login input:focus     { outline:none; }
+
+
+/* LABEL ======================================= */
+
+
+.login label          {
+  color: #999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+  
+}
+
+
+/* active state */
+
+
+.login input:focus ~ label, .login input:valid ~ label    {
+  top:-20px;
+  font-size:14px;
+  color:#999;
+}
+
+
+/* BOTTOM BARS ================================= */
+
+
+.bar  { position:relative; display:block; width:300px; }
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#ffffff; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+}
+
+
+/* active state */
+
+
+.login input:focus ~ .bar:before, .login input:focus ~ .bar:after {
+  width:50%;
+}
+
+
+/* HIGHLIGHTER ================================== */
+
+
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+
+/* active state */
+
+
+.login input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+
+
+/*input front-end*/
+
+.group{
+    position:relative; 
+    margin-bottom:45px;
+    width: 300px;
+    overflow-x: clip;
+}
+
+.group a{
+    color: #999;
+}
+
+.input_mail{
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+}
+
+.input_password{
+    background-color: rgba(255, 255, 255, 0);
+    color: #ffffff;
+}
+
+.input_submit-login{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  background-color: transparent;
+  cursor: pointer;
+  width: 300px;
+  height: 40px;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.2s;
+}
+
+.input_submit-login:hover{
+  transform: scale(0.95);
+  background-color: var(--gris-bg);
+  box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+  filter: drop-shadow(0 0 0.75rem var(--shadow));
+  border: 1px solid rgba(255, 255, 255, 0.329);
+}

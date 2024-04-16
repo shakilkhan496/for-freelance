@@ -1,0 +1,19 @@
+.content-accessoire{}
+.accessoire{
+    height: 500px;
+    width: 350px;
+    perspective: 1000px;
+}
+.d5{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 25px;
+    transition: all 0.15s ease-out;
+}
+
+.d5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

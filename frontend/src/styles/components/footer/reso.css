@@ -1,0 +1,33 @@
+.reso{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul-reso{
+    margin-right: 25px;
+    display: flex;
+    list-style-type: none;
+}
+
+.footer-logo{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.footer-logo img{
+    height: 50px;
+}
+
+.ul-reso img{
+    height: 25px;
+    transition: 0.2s;
+}
+
+.ul-reso img:hover{
+    border: 1px var(--blanc);
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+}
+
+.ul-reso li{
+    margin: 5px;
+}

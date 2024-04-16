@@ -1,0 +1,133 @@
+@media screen and (min-width: 850px){
+    .link{
+        margin-top: 20px;
+        border-top: 1px solid var(--blanc);
+        border-bottom: 1px solid var(--blanc);
+    }
+    
+    .footer-link{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .link{
+        margin-top: 20px;
+        border-top: 1px solid var(--blanc);
+        border-bottom: 1px solid var(--blanc);
+    }
+    
+    .footer-link{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+
+    .propo{
+        margin-left: 50px;
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    .info{
+        margin-left: 50px;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+    .categories{
+        margin-left: 50px;
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .partenaires{
+        margin-left: 50px;
+        grid-area: 2 / 2 / 3 / 3;
+    }
+}
+
+@media screen and (max-width: 540px){
+    .link{
+        margin-top: 20px;
+        border-top: 1px solid var(--blanc);
+        border-bottom: 1px solid var(--blanc);
+    }
+
+    .footer-link{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .propo{
+        width: 250px;
+    }
+    .info{
+        width: 250px;
+    }
+    .categories{
+        width: 250px;
+    }
+    .partenaires{
+        width: 250px;
+    }
+}
+    
+.propo ul{
+    list-style-type: none;
+}
+
+.info ul{
+    list-style-type: none;
+}
+
+.categories ul{
+    list-style-type: none;
+}
+
+.partenaires ul{
+    list-style-type: none;
+}
+
+.propo li{
+    margin-left: -35px;
+}
+.info li{
+    margin-left: -35px;
+}
+.categories li{
+    margin-left: -35px;
+}
+.partenaires li{
+    margin-left: -35px;
+}
+
+.propo a{
+    text-decoration: none;
+    color: var(--blanc);
+}
+.info a{
+    text-decoration: none;
+    color: var(--blanc);
+}
+.categories a{
+    text-decoration: none;
+    color: var(--blanc);
+}
+.partenaires a{
+    text-decoration: none;
+    color: var(--blanc);
+}
+
+.propo a:hover{
+    text-shadow: rgb(184, 226, 250) 1px 0 10px;
+}
+.info a:hover{
+    text-shadow: rgb(184, 226, 250) 1px 0 10px;
+}
+.categories a:hover{
+    text-shadow: rgb(184, 226, 250) 1px 0 10px;
+}
+.partenaires a:hover{
+    text-shadow: rgb(184, 226, 250) 1px 0 10px;
+}

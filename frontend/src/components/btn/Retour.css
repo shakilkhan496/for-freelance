@@ -1,0 +1,26 @@
+.retour-component{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 130px;
+}
+
+.container-back-line-retour{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-retour{
+    position: absolute;
+    width: 60px;
+    border: 1px solid #acacac;
+    top: 42.5px;
+    transition: 0.3s;
+}
+
+.retour-component:hover .line-retour{
+    border: 1px solid #fff;
+}

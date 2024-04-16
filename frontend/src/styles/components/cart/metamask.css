@@ -1,0 +1,132 @@
+
+
+.meta{
+    margin: 5% 10%;
+}
+
+.btn-connectAccountMeta{
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: large;
+    border: 1px solid var(--border);
+    background: linear-gradient(45deg, rgba(3,125,214,0.8099614845938375) 25%, rgba(235,133,27,0.8155637254901961) 75%);
+    transition: 0.2s;
+}
+
+.btn-connectAccountMeta:hover{
+    background-color: var(--gris-bg);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+    border: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+.btn-connectAccountMeta:active{
+    transform: scale(0.95);
+}
+
+.btn-connectAccountMetaDisabled{
+    height: 50px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: large;
+    border: 1px solid var(--border);
+    background: linear-gradient(45deg, rgba(3,125,214,0.8099614845938375) 25%, rgba(235,133,27,0.8155637254901961) 75%);
+    transition: 0.2s;
+    opacity: 0.5;
+}
+
+.btn-buyCrypto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+    height: 50px;
+    width: 100%;
+    border-radius: 20px;
+    font-size: large;
+    border: 1px solid var(--border);
+    background-color: var(--gris-bg);
+    transition: 0.2s;
+}
+
+.btn-buyCrypto:hover{
+    background-color: var(--gris-bg);
+    box-shadow: 0 8px 32px 0 rgba(123, 123, 125, 0.37);
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+    border: 1px solid rgba(255, 255, 255, 0.329);
+}
+
+.btn-buyCrypto img{
+    height: 90%;
+}
+
+.metaLogo{
+    height: 20px;
+}
+
+.content-metalogo-account{
+    position: relative;
+    display: inline-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    gap: 7.5px;
+    border: none;
+    border-radius: 15px;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.content-metalogo-account:hover{
+    background-color: #2d2d2d;
+    
+}
+
+.content-metalogo-account:hover .p-accountCrypto{
+    filter: drop-shadow(0 0 0.75rem var(--shadow));
+}
+
+.content-metalogo-account:hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    font-size: 1.5em;
+    background-color: #2d2d2d;
+    margin-top: 55px;
+    height: 20px;
+    width: 20px;
+}
+
+.content-metalogo-account:hover::after {
+    content: 'Copier';
+    padding-top: 10px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 35px;
+    background-color: #2d2d2d;
+    height: 27.5px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+.meta-adresse-cour{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.meta-pay{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10%;
+}

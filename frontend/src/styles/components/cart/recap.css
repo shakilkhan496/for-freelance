@@ -1,0 +1,47 @@
+
+.recap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 15px;
+    padding: 0px 20px;
+}
+
+.recap h2{
+    font-family: 'Stick No Bills', Helvetica;
+}
+
+.detail-recap-cart{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-promo-recap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sousTotal-recap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.reduction-recap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.livraison-recap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalPrice-recap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tax-recap{
+    margin-top: -10px;
+}
