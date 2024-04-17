@@ -14,7 +14,7 @@ const produitsRoutes = require("./routes/produits");
 dotenv.config({ path: "./config.env" });
 
 mongoose
-  .connect("mongodb", {
+  .connect("mongodb+srv://xersse:Lu01An20@cluster0.spvyc9v.mongodb.net/test", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

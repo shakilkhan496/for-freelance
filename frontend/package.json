@@ -20,7 +20,9 @@
     "react-loader-spinner": "^5.3.4",
     "react-router-dom": "^6.8.1",
     "react-tilty": "^2.0.3",
-    "stripe": "^12.3.0"
+    "sonner": "^1.4.41",
+    "stripe": "^12.3.0",
+    "web3": "^4.7.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
